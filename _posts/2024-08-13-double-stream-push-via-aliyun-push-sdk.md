@@ -11,7 +11,7 @@ mathjax: false
 mindmap: false
 mindmap2: false
 ---
-
+<!--more-->
 本文记录了一种使用没有原生支持多路推流的阿里云推流 Android SDK，实现同时推送两路不同画面的流的方法。
 
 ## 需求
