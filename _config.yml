@@ -7,7 +7,7 @@ url:
 date_format: "ordinal"
 title: 逸涵
 subtitle: "welcome to my blog"
-description: "我的第一个博客"
+description: "相信相信的力量"
 keywords: 大学生
 timezone: Asia/Beijing
 encoding: "utf-8"
@@ -32,7 +32,7 @@ components:
     enabled: true
   qrcode:
     enabled: false
-    image_alt: 闷骚的程序员
+    image_alt: 想要就争取，得到就珍惜
   wiki:
     view: cate
   fancybox:
