@@ -11,7 +11,7 @@ mathjax: false
 mindmap: false
 mindmap2: false
 ---
-
+<!--more-->
 ## 背景
 
 基于 MyBatis 开发的项目，新增数据库表以后，总是需要编写对应的 Entity、Mapper 和 Service 等等 Class 的代码，这些都是重复的工作，我们可以想一些办法来自动生成这些代码。
