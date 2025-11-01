@@ -11,7 +11,7 @@ mathjax: false
 mindmap: false
 mindmap2: false
 ---
-
+<!--more-->
 我们的 iOS APP 有一个小 Bug，场景简化后是这样：
 
 接口返回一个时间字符串，APP 里比较它与当前时间，如果当前时间晚于它，就显示一个按钮，否则不显示。
