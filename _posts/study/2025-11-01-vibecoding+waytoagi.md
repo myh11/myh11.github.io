@@ -6,7 +6,9 @@ categories: 学习
 tags: [vibecoding,waytoAGI]#标签
 author: myh 
 ---
+
 <!--more-->
+
 ### vibecoding
 
 #### 和ai立规矩：
@@ -108,6 +110,7 @@ subagent
 codex claude code cursor
 
 用极端提示词让ai在你睡觉时工作8小时
+
 
 
 
