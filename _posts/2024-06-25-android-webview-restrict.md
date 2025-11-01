@@ -11,7 +11,7 @@ mathjax: false
 mindmap: false
 mindmap2: false
 ---
-
+<!--more-->
 最近 Android APP 项目接到少量用户反馈，说在隐私协议的界面上，有两种方式可以跳到百度搜索页面：
 
 1. 长按选择部分文字，然后在弹出的菜单中选择「搜索」，系统会打开浏览器进入百度搜索页面；
