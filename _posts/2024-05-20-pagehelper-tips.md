@@ -11,7 +11,7 @@ mathjax: false
 mindmap: false
 mindmap2: false
 ---
-
+<!--more-->
 开局上来，我们先看看问题场景的示例代码：
 
 ```java
