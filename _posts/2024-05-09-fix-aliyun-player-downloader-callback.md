@@ -11,7 +11,7 @@ mathjax: false
 mindmap: false
 mindmap2: false
 ---
-
+<!--more-->
 最近在升级 Android 项目里的阿里云播放器 SDK 版本，其中很多相关逻辑是基于阿里云提供的 Demo 来更新的。修改完自测时，发现下载器的回调接口偶现不回调的问题。本文简要记录解决过程。
 
 ## 问题描述
