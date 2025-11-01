@@ -11,7 +11,7 @@ mathjax: false
 mindmap: false
 mindmap2: false
 ---
-
+<!--more-->
 最近在一个 Android 项目里遇到一个偶现的 java.util.ConcurrentModificationException 异常导致的崩溃，经过排查，导致异常的代码大概是这样的：
 
 ```java
