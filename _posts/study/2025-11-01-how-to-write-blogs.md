@@ -6,6 +6,7 @@ categories: 学习
 tags: [hh]#标签
 author: myh 
 ---
+
 <!--more-->
 
 ##### 怎么写博客
@@ -78,3 +79,4 @@ study/2025-11-02-python.md
 
 
 这会自动在 _posts 里创建一个名为 study 的文件夹，并在里面创建 2025-11-02-python.md 文件
+
