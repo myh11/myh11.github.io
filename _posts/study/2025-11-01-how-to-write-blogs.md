@@ -1,3 +1,13 @@
+---
+layout: post
+title: "你好"#标题
+date: 2025-11-01 21:00:00 +0800#时区
+categories: 学习
+tags: [hh]#标签
+author: myh 
+---
+<!--more-->
+
 ##### 怎么写博客
 
 [myh11](https://github.com/myh11)[myh11.github.io](https://github.com/myh11/myh11.github.io)
@@ -64,6 +74,7 @@ ctrl+f5 更新页面
 4.在输入文件名的框里，直接写：
 
 study/2025-11-02-python.md
+
 
 
 这会自动在 _posts 里创建一个名为 study 的文件夹，并在里面创建 2025-11-02-python.md 文件
