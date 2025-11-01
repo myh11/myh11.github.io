@@ -6,7 +6,9 @@ categories: 学习
 tags: [职工管理系统]#标签
 author: myh 
 ---
+
 <!--more-->
+
 # 职工管理系统
 
 ## 1、管理系统需求
@@ -1822,3 +1824,4 @@ void WorkerManager::Clean_File()
 
 
 随着清空文件功能实现，本案例制作完毕  ^ _ ^  
+
