@@ -1,6 +1,7 @@
 # ---------------- #
 #   Main Configs   #
 # ---------------- #
+future: true
 baseurl:
 url:
 date_format: "ordinal"
@@ -25,7 +26,7 @@ components:
     enabled: false
     start_date: 2020-05-03
   side_bar_repo:
-    enabled: true
+    enabled: false
     limit: 5
   word_count:
     enabled: true
