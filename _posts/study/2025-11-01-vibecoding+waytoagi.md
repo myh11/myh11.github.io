@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "vibecoding+waytiAGI"#标题
+title: "vibecoding+waytoAGI"#标题
 date: 2025-11-01 21:00:00 +0800#时区
 categories: 学习
 tags: [vibecoding,waytoAGI]#标签
@@ -110,6 +110,7 @@ subagent
 codex claude code cursor
 
 用极端提示词让ai在你睡觉时工作8小时
+
 
 
 
