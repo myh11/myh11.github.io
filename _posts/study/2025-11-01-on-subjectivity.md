@@ -1,3 +1,12 @@
+---
+layout: post
+title: "关于主体性-by pearlieee"#标题
+date: 2025-11-01 21:00:00 +0800#时区
+categories: 学习
+tags: [on subjectivity]#标签
+author: myh 
+---
+<!--more-->
 关于主体性
 
 -来自一个外网博主的观点
@@ -167,6 +176,7 @@
 因为你的存在 而不是因为你的表现
 
 我不是等待被选择 而是去选择 选择谁获得我的能量
+
 
 
 
