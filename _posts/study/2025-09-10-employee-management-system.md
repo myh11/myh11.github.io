@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "职工管理系统"#标题
+title: "employee management system"#标题
 date: 2025-11-01 21:00:00 +0800#时区
 categories: 学习
 tags: [职工管理系统]#标签
@@ -1824,4 +1824,5 @@ void WorkerManager::Clean_File()
 
 
 随着清空文件功能实现，本案例制作完毕  ^ _ ^  
+
 
