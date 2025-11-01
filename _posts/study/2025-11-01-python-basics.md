@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python 入门指南"#标题
+title: "Python basics"#标题
 date: 2025-11-01 21:00:00 +0800#时区
 categories: 学习
 tags: [python,教程]#标签
@@ -469,5 +469,6 @@ print(a[1,:2])
 ```c
 
 ```
+
 
 
