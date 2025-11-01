@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "通讯录管理系统"#标题
+title: "address list management system"#标题
 date: 2025-11-01 21:00:00 +0800#时区
 categories: 学习
 tags: [通讯录]#标签
@@ -305,6 +305,7 @@ int main() {
 	}
 
 ```
+
 
 
 
