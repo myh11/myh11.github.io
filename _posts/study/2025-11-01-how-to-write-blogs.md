@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "你好"#标题
+title: "how to write blogs"#标题
 date: 2025-11-01 21:00:00 +0800#时区
 categories: 学习
-tags: [hh]#标签
+tags: [blogs]#标签
 author: myh 
 ---
 
@@ -79,4 +79,5 @@ study/2025-11-02-python.md
 
 
 这会自动在 _posts 里创建一个名为 study 的文件夹，并在里面创建 2025-11-02-python.md 文件
+
 
