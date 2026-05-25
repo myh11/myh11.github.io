@@ -9,173 +9,147 @@ css:
 {% assign apt_post_url = site.url | append: "/2026/05/25/apt-attack-case-extraction-system/" %}
 
 {% if paginator.page == 1 %}
-<section class="home-hero">
-  <div class="home-hero__grid"></div>
-  <div class="home-hero__glow home-hero__glow--one"></div>
-  <div class="home-hero__glow home-hero__glow--two"></div>
-  <div class="container home-hero__inner">
-    <div class="home-hero__copy reveal-on-scroll">
-      <span class="home-eyebrow">Cyber Portfolio · Knowledge Graph · Engineering Practice</span>
-      <h1>用工程把安全报告变成知识图谱</h1>
+<section class="blog-hero">
+  <div class="blog-hero__orb blog-hero__orb--one"></div>
+  <div class="blog-hero__orb blog-hero__orb--two"></div>
+  <div class="container blog-hero__inner">
+    <div class="blog-hero__copy reveal-on-scroll">
+      <span class="blog-eyebrow">Computer Science · Projects · Notes</span>
+      <h1>Hi，我是 myh11</h1>
       <p>
-        这里记录课程项目、工程实践和技术学习。我更关注“把想法做成系统”的过程：
-        从信息抽取、图谱建模、前端可视化，到可复现的一键启动和清晰的项目文档。
+        这里记录编程学习、课程项目、系统实践和技术思考。博客不是只展示一个项目，
+        而是把不同阶段做过的东西、踩过的坑、整理过的知识持续沉淀下来。
       </p>
-      <div class="home-hero__actions">
-        <a class="home-button home-button--primary" href="{{ apt_post_url }}">查看代表项目</a>
-        <a class="home-button" href="https://github.com/myh11" target="_blank">进入 GitHub</a>
+      <div class="blog-hero__tags">
+        <span>Java</span>
+        <span>Python</span>
+        <span>C++</span>
+        <span>前端</span>
+        <span>数据库</span>
+        <span>项目实践</span>
+      </div>
+      <div class="blog-hero__actions">
+        <a class="blog-button blog-button--primary" href="#latest-posts">阅读最新文章</a>
+        <a class="blog-button" href="https://github.com/myh11" target="_blank">GitHub</a>
       </div>
     </div>
-    <div class="home-hero__console reveal-on-scroll">
-      <div class="home-console__bar">
+    <div class="blog-hero__panel reveal-on-scroll">
+      <div class="blog-panel__header">
         <span></span>
         <span></span>
         <span></span>
       </div>
-      <pre><code>&gt; focus --area threat-intel
-APT Reports  ->  Entities
-Entities     ->  Neo4j Graph
-Graph        ->  Visual Analysis
-
-status: building reusable work</code></pre>
+      <div class="blog-panel__body">
+        <div class="blog-mini-line">
+          <b>now</b>
+          <span>整理课程项目与技术笔记</span>
+        </div>
+        <div class="blog-mini-line">
+          <b>focus</b>
+          <span>工程实践 / 数据库 / 前后端 / 安全分析</span>
+        </div>
+        <div class="blog-mini-line">
+          <b>habit</b>
+          <span>把问题写清楚，把方案做出来</span>
+        </div>
+        <div class="blog-mini-stats">
+          <div>
+            <strong>{{ site.posts | size }}</strong>
+            <span>篇文章</span>
+          </div>
+          <div>
+            <strong>{{ site.categories | size }}</strong>
+            <span>个分类</span>
+          </div>
+          <div>
+            <strong>∞</strong>
+            <span>持续更新</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="container home-featured">
-  <div class="home-section-title reveal-on-scroll">
-    <span>Featured Project</span>
-    <h2>代表作品</h2>
-    <p>把最有辨识度的项目放在首页第一屏之后，别人点进来就能快速知道你做过什么、做到什么程度。</p>
+<section class="container blog-featured">
+  <div class="blog-section-title reveal-on-scroll">
+    <span>Featured</span>
+    <h2>精选内容</h2>
+    <p>这里放代表项目和常用学习笔记。APT项目是其中一个亮点，但首页仍然以个人技术博客为主。</p>
   </div>
-  <div class="home-project-card reveal-on-scroll">
-    <div class="home-project-card__content">
-      <span class="home-project-card__label">APT攻击案例信息抽取系统</span>
-      <h3>从非结构化威胁情报报告到可分析的攻击知识图谱</h3>
-      <p>
-        系统围绕APT报告中的组织、攻击技术、IOC、恶意软件、漏洞、工具和攻击步骤进行抽取，
-        将结果写入Neo4j，并通过前端完成案例库、图谱态势、攻击链对比、组织画像和问题分布分析。
-      </p>
-      <div class="home-metrics">
-        <div>
-          <strong data-count="59">0</strong>
-          <span>APT案例</span>
-        </div>
-        <div>
-          <strong data-count="1173">0</strong>
-          <span>图谱节点</span>
-        </div>
-        <div>
-          <strong data-count="5821">0</strong>
-          <span>图谱关系</span>
-        </div>
+  <div class="blog-feature-grid">
+    <a class="blog-feature-card blog-feature-card--large reveal-on-scroll" href="{{ apt_post_url }}">
+      <span class="blog-card-kicker">项目实践</span>
+      <h3>APT攻击案例信息抽取系统</h3>
+      <p>信息抽取、Neo4j知识图谱、攻击链对比和前端可视化，把安全报告做成可分析的数据资产。</p>
+      <div class="blog-card-meta">
+        <span>Python</span>
+        <span>React</span>
+        <span>Neo4j</span>
       </div>
-      <div class="home-project-card__actions">
-        <a class="home-button home-button--primary" href="{{ apt_post_url }}">阅读项目展示</a>
-        <a class="home-button" href="https://github.com/myh11/apt-attack-case-extraction-system" target="_blank">查看源码</a>
-      </div>
-    </div>
-    <div class="home-project-card__visual" aria-hidden="true">
-      <svg viewBox="0 0 520 360" class="home-graph">
-        <path d="M260 178 C190 104 132 88 76 98"></path>
-        <path d="M260 178 C336 86 408 80 462 104"></path>
-        <path d="M260 178 C175 226 126 268 78 292"></path>
-        <path d="M260 178 C352 238 402 278 456 288"></path>
-        <path d="M76 98 C182 62 332 62 462 104"></path>
-        <path d="M78 292 C210 326 340 320 456 288"></path>
-        <g class="node node--case">
-          <circle cx="260" cy="178" r="46"></circle>
-          <text x="260" y="184">Case</text>
-        </g>
-        <g class="node node--org">
-          <circle cx="76" cy="98" r="30"></circle>
-          <text x="76" y="103">Org</text>
-        </g>
-        <g class="node node--tech">
-          <circle cx="462" cy="104" r="32"></circle>
-          <text x="462" y="109">TTP</text>
-        </g>
-        <g class="node node--ioc">
-          <circle cx="78" cy="292" r="30"></circle>
-          <text x="78" y="297">IOC</text>
-        </g>
-        <g class="node node--tool">
-          <circle cx="456" cy="288" r="30"></circle>
-          <text x="456" y="293">Tool</text>
-        </g>
-      </svg>
-    </div>
+    </a>
+    <a class="blog-feature-card reveal-on-scroll" href="{{ site.url }}/2025/11/01/python-basics/">
+      <span class="blog-card-kicker">学习笔记</span>
+      <h3>Python基础</h3>
+      <p>记录Python语法、常用写法和基础练习。</p>
+    </a>
+    <a class="blog-feature-card reveal-on-scroll" href="{{ site.url }}/2025/11/01/C++easy/">
+      <span class="blog-card-kicker">编程基础</span>
+      <h3>C++入门</h3>
+      <p>整理C++基础语法、练习题和学习路径。</p>
+    </a>
+    <a class="blog-feature-card reveal-on-scroll" href="{{ site.url }}/2025/11/01/address-list-management-system/">
+      <span class="blog-card-kicker">课程项目</span>
+      <h3>地址簿管理系统</h3>
+      <p>从需求、数据结构到功能实现的项目复盘。</p>
+    </a>
   </div>
 </section>
 
-<section class="container home-capabilities">
-  <div class="home-section-title reveal-on-scroll">
-    <span>Capabilities</span>
-    <h2>技术能力</h2>
-    <p>用更清晰的方式展示技术栈，让首页既有视觉冲击，也有正式、可信的内容层次。</p>
+<section class="container blog-categories">
+  <div class="blog-section-title reveal-on-scroll">
+    <span>Map</span>
+    <h2>技术分类</h2>
+    <p>把文章按学习方向组织起来，方便以后查，也方便别人快速理解博客内容。</p>
   </div>
-  <div class="home-card-grid">
-    <article class="home-skill-card reveal-on-scroll">
+  <div class="blog-category-grid">
+    <a class="blog-category-card reveal-on-scroll" href="{{ site.url }}/categories/#学习">
       <b>01</b>
-      <h3>前端工程</h3>
-      <p>React、TypeScript、Vite、组件化页面、图谱与数据可视化。</p>
-    </article>
-    <article class="home-skill-card reveal-on-scroll">
+      <h3>编程学习</h3>
+      <p>C++、Python、基础语法、练习和阶段性总结。</p>
+    </a>
+    <a class="blog-category-card reveal-on-scroll" href="{{ site.url }}/categories/#项目">
       <b>02</b>
-      <h3>后端分析</h3>
-      <p>Python API、批量处理、信息抽取、实体归一与结果导出。</p>
-    </article>
-    <article class="home-skill-card reveal-on-scroll">
+      <h3>项目实践</h3>
+      <p>课程项目、系统设计、前后端联调和文档整理。</p>
+    </a>
+    <a class="blog-category-card reveal-on-scroll" href="{{ site.url }}/categories/#数据库">
       <b>03</b>
-      <h3>数据建模</h3>
-      <p>Neo4j图数据库、攻击链建模、案例实体关系组织与查询。</p>
-    </article>
-    <article class="home-skill-card reveal-on-scroll">
+      <h3>数据库</h3>
+      <p>数据建模、ER图、表结构、Neo4j与关系设计。</p>
+    </a>
+    <a class="blog-category-card reveal-on-scroll" href="{{ site.url }}/categories/#随笔">
       <b>04</b>
-      <h3>工程部署</h3>
-      <p>Docker、启动脚本、GitHub仓库整理、GitHub Pages展示。</p>
-    </article>
-  </div>
-</section>
-
-<section class="container home-analysis">
-  <div class="home-section-title reveal-on-scroll">
-    <span>What Makes It Different</span>
-    <h2>项目亮点</h2>
-  </div>
-  <div class="home-highlight-row">
-    <div class="home-highlight reveal-on-scroll">
-      <span>Quality</span>
-      <h3>数据质量诊断</h3>
-      <p>定位弱案例原因，解释组织、IOC、技术和图谱关系为什么不足。</p>
-    </div>
-    <div class="home-highlight reveal-on-scroll">
-      <span>Chain</span>
-      <h3>攻击链完整度分析</h3>
-      <p>把技术和步骤映射到ATT&CK阶段，判断案例是否能支撑完整复盘。</p>
-    </div>
-    <div class="home-highlight reveal-on-scroll">
-      <span>Similarity</span>
-      <h3>相似案例推荐</h3>
-      <p>基于共享技术、IOC、工具和组织关系，发现可横向对比的案例。</p>
-    </div>
+      <h3>技术思考</h3>
+      <p>学习方法、问题复盘、工具使用和工程经验。</p>
+    </a>
   </div>
 </section>
 {% endif %}
 
-<section class="container content home-content-panel">
-  <div class="home-section-title home-section-title--compact reveal-on-scroll">
-    <span>Latest Writing</span>
+<section id="latest-posts" class="container content blog-content-panel">
+  <div class="blog-section-title blog-section-title--compact reveal-on-scroll">
+    <span>Latest</span>
     <h2>{% if paginator.page == 1 %}最新文章{% else %}文章列表 · 第 {{ paginator.page }} 页{% endif %}</h2>
-    <p>保留博客阅读属性，文章列表仍然清楚显示标题、摘要、日期和分类。</p>
+    <p>首页的主体仍然是文章列表：清楚展示标题、摘要、日期和分类，保持博客本身的阅读性。</p>
   </div>
   <div class="columns">
     <div class="column two-thirds">
-      <ol class="repo-list home-post-list">
+      <ol class="repo-list blog-post-list">
         {% for post in site.posts %}
         {% if paginator.page == 1 %}
         {% if post.topmost == true %}
-        <li class="repo-list-item home-post-card reveal-on-scroll">
+        <li class="repo-list-item blog-post-card reveal-on-scroll">
           <h3 class="repo-list-name">
             <a href="{{ site.url }}{{ post.url }}"><span class="top-most-flag">[置顶]</span>{{ post.title }}</a>
           </h3>
@@ -198,7 +172,7 @@ status: building reusable work</code></pre>
 
         {% for post in paginator.posts %}
         {% if post.topmost != true %}
-        <li class="repo-list-item home-post-card reveal-on-scroll">
+        <li class="repo-list-item blog-post-card reveal-on-scroll">
           <h3 class="repo-list-name">
             <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
           </h3>
@@ -219,14 +193,14 @@ status: building reusable work</code></pre>
         {% endfor %}
       </ol>
     </div>
-    <div class="column one-third home-sidebar">
+    <div class="column one-third blog-sidebar">
       {% include sidebar-search.html %}
       {% include sidebar-categories-cloud.html %}
       {% include sidebar-ad.html %}
       {% include sidebar-popular-repo.html %}
     </div>
   </div>
-  <div class="pagination text-align home-pagination">
+  <div class="pagination text-align blog-pagination">
     <div class="btn-group">
       {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
@@ -289,8 +263,8 @@ status: building reusable work</code></pre>
 </section>
 
 {% if paginator.page == 1 %}
-<section class="container home-closing reveal-on-scroll">
-  <p>持续把课程项目、工程实践和技术学习整理成可复用的作品。</p>
+<section class="container blog-closing reveal-on-scroll">
+  <p>持续学习，持续记录，持续把想法做成作品。</p>
 </section>
 {% endif %}
 
@@ -309,42 +283,6 @@ status: building reusable work</code></pre>
     revealItems.forEach(function (item) { observer.observe(item); });
   } else {
     revealItems.forEach(function (item) { item.classList.add('is-visible'); });
-  }
-
-  var counters = document.querySelectorAll('[data-count]');
-  var hasAnimated = false;
-  function animateCounters() {
-    if (hasAnimated) return;
-    hasAnimated = true;
-    counters.forEach(function (node) {
-      var target = Number(node.getAttribute('data-count'));
-      var start = 0;
-      var duration = 1100;
-      var begin = null;
-      function tick(timestamp) {
-        if (!begin) begin = timestamp;
-        var progress = Math.min((timestamp - begin) / duration, 1);
-        var eased = 1 - Math.pow(1 - progress, 3);
-        node.textContent = Math.floor(start + target * eased).toLocaleString();
-        if (progress < 1) requestAnimationFrame(tick);
-      }
-      requestAnimationFrame(tick);
-    });
-  }
-  if (counters.length) {
-    if ('IntersectionObserver' in window) {
-      var counterObserver = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            animateCounters();
-            counterObserver.disconnect();
-          }
-        });
-      }, { threshold: 0.4 });
-      counterObserver.observe(counters[0]);
-    } else {
-      animateCounters();
-    }
   }
 })();
 </script>
