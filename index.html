@@ -3,7 +3,7 @@ layout: default
 class: home home-showcase-page
 comments: false
 css:
-  - home-showcase.css
+  - home-showcase.css?v=20260525-light-kitty
 ---
 
 {% assign apt_post_url = site.url | append: "/2026/05/25/apt-attack-case-extraction-system/" %}
@@ -17,33 +17,34 @@ css:
     <span class="blog-kitty-orbit__spark blog-kitty-orbit__spark--two">✦</span>
     <span class="blog-kitty-orbit__spark blog-kitty-orbit__spark--three">●</span>
     <svg class="blog-kitty" viewBox="0 0 120 108" aria-hidden="true">
-      <path class="blog-kitty__ear" d="M24 44 L21 15 L45 33"></path>
-      <path class="blog-kitty__ear" d="M96 44 L99 15 L75 33"></path>
-      <ellipse class="blog-kitty__face" cx="60" cy="57" rx="43" ry="36"></ellipse>
-      <circle class="blog-kitty__eye" cx="45" cy="56" r="4"></circle>
-      <circle class="blog-kitty__eye" cx="75" cy="56" r="4"></circle>
-      <ellipse class="blog-kitty__nose" cx="60" cy="66" rx="5" ry="3.6"></ellipse>
-      <path class="blog-kitty__whisker" d="M22 61 H40"></path>
-      <path class="blog-kitty__whisker" d="M24 72 H42"></path>
-      <path class="blog-kitty__whisker" d="M80 61 H98"></path>
-      <path class="blog-kitty__whisker" d="M78 72 H96"></path>
-      <path class="blog-kitty__bow" d="M78 33 C88 20 102 27 98 40 C102 53 88 58 78 45 Z"></path>
-      <path class="blog-kitty__bow" d="M78 33 C68 20 54 27 58 40 C54 53 68 58 78 45 Z"></path>
-      <circle class="blog-kitty__bow-dot" cx="78" cy="40" r="6"></circle>
+      <path class="blog-kitty__ear" d="M24 44 L21 15 L45 33" fill="#fff7fb" stroke="#233047" stroke-width="4" stroke-linejoin="round"></path>
+      <path class="blog-kitty__ear" d="M96 44 L99 15 L75 33" fill="#fff7fb" stroke="#233047" stroke-width="4" stroke-linejoin="round"></path>
+      <ellipse class="blog-kitty__face" cx="60" cy="57" rx="43" ry="36" fill="#fff7fb" stroke="#233047" stroke-width="4"></ellipse>
+      <circle class="blog-kitty__eye" cx="45" cy="56" r="4" fill="#233047"></circle>
+      <circle class="blog-kitty__eye" cx="75" cy="56" r="4" fill="#233047"></circle>
+      <ellipse class="blog-kitty__nose" cx="60" cy="66" rx="5" ry="3.6" fill="#fbbf24" stroke="#233047" stroke-width="2"></ellipse>
+      <path class="blog-kitty__whisker" d="M22 61 H40" fill="none" stroke="#233047" stroke-width="3" stroke-linecap="round"></path>
+      <path class="blog-kitty__whisker" d="M24 72 H42" fill="none" stroke="#233047" stroke-width="3" stroke-linecap="round"></path>
+      <path class="blog-kitty__whisker" d="M80 61 H98" fill="none" stroke="#233047" stroke-width="3" stroke-linecap="round"></path>
+      <path class="blog-kitty__whisker" d="M78 72 H96" fill="none" stroke="#233047" stroke-width="3" stroke-linecap="round"></path>
+      <path class="blog-kitty__bow" d="M78 33 C88 20 102 27 98 40 C102 53 88 58 78 45 Z" fill="#fb7185" stroke="#233047" stroke-width="3" stroke-linejoin="round"></path>
+      <path class="blog-kitty__bow" d="M78 33 C68 20 54 27 58 40 C54 53 68 58 78 45 Z" fill="#fb7185" stroke="#233047" stroke-width="3" stroke-linejoin="round"></path>
+      <circle class="blog-kitty__bow-dot" cx="78" cy="40" r="6" fill="#fb7185" stroke="#233047" stroke-width="3"></circle>
     </svg>
   </div>
   <div class="container blog-hero__inner">
     <div class="blog-hero__copy reveal-on-scroll">
-      <span class="blog-eyebrow">Computer Science · Projects · Notes</span>
-      <h1>Hi，我是 myh11</h1>
+      <span class="blog-eyebrow">Information Security Student · Code · Projects · Notes</span>
+      <h1>Hi，我是 myh11，一名信息安全学生</h1>
       <p>
-        这里记录编程学习、课程项目、系统实践和技术思考。博客不是只展示一个项目，
+        这里记录信息安全学习、编程基础、课程项目、系统实践和技术思考。博客不是只展示某一个项目，
         而是把不同阶段做过的东西、踩过的坑、整理过的知识持续沉淀下来。
       </p>
       <div class="blog-hero__tags">
         <span>Java</span>
         <span>Python</span>
         <span>C++</span>
+        <span>网络安全</span>
         <span>前端</span>
         <span>数据库</span>
         <span>项目实践</span>
@@ -62,11 +63,11 @@ css:
       <div class="blog-panel__body">
         <div class="blog-mini-line">
           <b>now</b>
-          <span>整理课程项目与技术笔记</span>
+          <span>整理信息安全课程项目与技术笔记</span>
         </div>
         <div class="blog-mini-line">
           <b>focus</b>
-          <span>工程实践 / 数据库 / 前后端 / 安全分析</span>
+          <span>安全分析 / 数据库 / 前后端 / 工程实践</span>
         </div>
         <div class="blog-mini-line">
           <b>habit</b>
@@ -95,7 +96,7 @@ css:
   <div class="blog-section-title reveal-on-scroll">
     <span>Featured</span>
     <h2>精选内容</h2>
-    <p>这里放代表项目和常用学习笔记。APT项目是其中一个亮点，但首页仍然以个人技术博客为主。</p>
+    <p>这里放代表项目和常用学习笔记。APT项目是其中一个亮点，但首页仍然以信息安全学生的个人技术博客为主。</p>
   </div>
   <div class="blog-feature-grid">
     <a class="blog-feature-card blog-feature-card--large reveal-on-scroll" href="{{ apt_post_url }}">
@@ -141,7 +142,7 @@ css:
     <a class="blog-category-card reveal-on-scroll" href="{{ site.url }}/categories/#项目">
       <b>02</b>
       <h3>项目实践</h3>
-      <p>课程项目、系统设计、前后端联调和文档整理。</p>
+      <p>安全方向课程项目、系统设计、前后端联调和文档整理。</p>
     </a>
     <a class="blog-category-card reveal-on-scroll" href="{{ site.url }}/categories/#数据库">
       <b>03</b>
@@ -151,7 +152,7 @@ css:
     <a class="blog-category-card reveal-on-scroll" href="{{ site.url }}/categories/#随笔">
       <b>04</b>
       <h3>技术思考</h3>
-      <p>学习方法、问题复盘、工具使用和工程经验。</p>
+      <p>学习方法、问题复盘、安全工具使用和工程经验。</p>
     </a>
   </div>
 </section>
