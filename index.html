@@ -1,293 +1,142 @@
 ---
 layout: default
-class: home home-showcase-page
+class: home digital-garden-page
 comments: false
 css:
-  - home-showcase.css?v=20260525-light-kitty
+  - home-showcase.css?v=20260525-digital-garden
 ---
 
-{% assign apt_post_url = site.url | append: "/2026/05/25/apt-attack-case-extraction-system/" %}
-
-{% if paginator.page == 1 %}
-<section class="blog-hero">
-  <div class="blog-hero__orb blog-hero__orb--one"></div>
-  <div class="blog-hero__orb blog-hero__orb--two"></div>
-  <div class="blog-kitty-orbit" aria-label="可爱小猫装饰动画" role="img">
-    <span class="blog-kitty-orbit__spark blog-kitty-orbit__spark--one">♡</span>
-    <span class="blog-kitty-orbit__spark blog-kitty-orbit__spark--two">✦</span>
-    <span class="blog-kitty-orbit__spark blog-kitty-orbit__spark--three">●</span>
-    <svg class="blog-kitty" viewBox="0 0 120 108" aria-hidden="true">
-      <path class="blog-kitty__ear" d="M24 44 L21 15 L45 33" fill="#fff7fb" stroke="#233047" stroke-width="4" stroke-linejoin="round"></path>
-      <path class="blog-kitty__ear" d="M96 44 L99 15 L75 33" fill="#fff7fb" stroke="#233047" stroke-width="4" stroke-linejoin="round"></path>
-      <ellipse class="blog-kitty__face" cx="60" cy="57" rx="43" ry="36" fill="#fff7fb" stroke="#233047" stroke-width="4"></ellipse>
-      <circle class="blog-kitty__eye" cx="45" cy="56" r="4" fill="#233047"></circle>
-      <circle class="blog-kitty__eye" cx="75" cy="56" r="4" fill="#233047"></circle>
-      <ellipse class="blog-kitty__nose" cx="60" cy="66" rx="5" ry="3.6" fill="#fbbf24" stroke="#233047" stroke-width="2"></ellipse>
-      <path class="blog-kitty__whisker" d="M22 61 H40" fill="none" stroke="#233047" stroke-width="3" stroke-linecap="round"></path>
-      <path class="blog-kitty__whisker" d="M24 72 H42" fill="none" stroke="#233047" stroke-width="3" stroke-linecap="round"></path>
-      <path class="blog-kitty__whisker" d="M80 61 H98" fill="none" stroke="#233047" stroke-width="3" stroke-linecap="round"></path>
-      <path class="blog-kitty__whisker" d="M78 72 H96" fill="none" stroke="#233047" stroke-width="3" stroke-linecap="round"></path>
-      <path class="blog-kitty__bow" d="M78 33 C88 20 102 27 98 40 C102 53 88 58 78 45 Z" fill="#fb7185" stroke="#233047" stroke-width="3" stroke-linejoin="round"></path>
-      <path class="blog-kitty__bow" d="M78 33 C68 20 54 27 58 40 C54 53 68 58 78 45 Z" fill="#fb7185" stroke="#233047" stroke-width="3" stroke-linejoin="round"></path>
-      <circle class="blog-kitty__bow-dot" cx="78" cy="40" r="6" fill="#fb7185" stroke="#233047" stroke-width="3"></circle>
-    </svg>
+<main class="garden-shell" id="home">
+  <div class="garden-bg" aria-hidden="true">
+    <span class="garden-bg__glow garden-bg__glow--blue"></span>
+    <span class="garden-bg__glow garden-bg__glow--green"></span>
+    <span class="garden-bg__line garden-bg__line--one"></span>
+    <span class="garden-bg__line garden-bg__line--two"></span>
   </div>
-  <div class="container blog-hero__inner">
-    <div class="blog-hero__copy reveal-on-scroll">
-      <span class="blog-eyebrow">Information Security Student · Code · Projects · Notes</span>
-      <h1>Hi，我是 myh11，一名信息安全学生</h1>
+
+  <nav class="garden-nav" aria-label="Main navigation">
+    <a class="garden-nav__brand" href="{{ site.url }}/">myh11</a>
+    <div class="garden-nav__links">
+      <a href="#home">Home</a>
+      <a href="#entries">Notes</a>
+      <a href="#entries">Projects</a>
+      <a href="#entries">Security</a>
+      <a href="#entries">Thoughts</a>
+      <a href="#about">About</a>
+    </div>
+  </nav>
+
+  <section class="garden-hero">
+    <div class="garden-hero__copy reveal-on-scroll">
+      <span class="garden-eyebrow">Information Security · Digital Garden</span>
+      <h1>myh11</h1>
       <p>
-        这里记录信息安全学习、编程基础、课程项目、系统实践和技术思考。博客不是只展示某一个项目，
-        而是把不同阶段做过的东西、踩过的坑、整理过的知识持续沉淀下来。
+        信息安全大学生的数字花园，记录项目、笔记、思考，以及慢慢变强的过程。
       </p>
-      <div class="blog-hero__tags">
-        <span>Java</span>
-        <span>Python</span>
-        <span>C++</span>
-        <span>网络安全</span>
-        <span>前端</span>
-        <span>数据库</span>
-        <span>项目实践</span>
-      </div>
-      <div class="blog-hero__actions">
-        <a class="blog-button blog-button--primary" href="#latest-posts">阅读最新文章</a>
-        <a class="blog-button" href="https://github.com/myh11" target="_blank">GitHub</a>
+      <div class="garden-hero__actions">
+        <a class="garden-button garden-button--primary" href="#entries">Explore Garden</a>
+        <a class="garden-button" href="https://github.com/myh11" target="_blank">GitHub</a>
       </div>
     </div>
-    <div class="blog-hero__panel reveal-on-scroll">
-      <div class="blog-panel__header">
+
+    <aside class="garden-terminal reveal-on-scroll" aria-label="Personal terminal summary">
+      <div class="garden-terminal__bar">
         <span></span>
         <span></span>
         <span></span>
       </div>
-      <div class="blog-panel__body">
-        <div class="blog-mini-line">
-          <b>now</b>
-          <span>整理信息安全课程项目与技术笔记</span>
-        </div>
-        <div class="blog-mini-line">
-          <b>focus</b>
-          <span>安全分析 / 数据库 / 前后端 / 工程实践</span>
-        </div>
-        <div class="blog-mini-line">
-          <b>habit</b>
-          <span>把问题写清楚，把方案做出来</span>
-        </div>
-        <div class="blog-mini-stats">
-          <div>
-            <strong>{{ site.posts | size }}</strong>
-            <span>篇文章</span>
-          </div>
-          <div>
-            <strong>{{ site.categories | size }}</strong>
-            <span>个分类</span>
-          </div>
-          <div>
-            <strong>∞</strong>
-            <span>持续更新</span>
-          </div>
-        </div>
-      </div>
+      <pre><code>$ whoami
+role: information-security student
+direction: security / code / systems
+status: learning, building, reflecting
+
+$ tree ~/garden
+notes/        技术笔记与课程内容
+projects/     项目实践与过程记录
+security/     CTF / 安全研究 / 复盘
+thoughts/     学习思考与生活感悟</code></pre>
+    </aside>
+  </section>
+
+  <section class="garden-section" id="entries">
+    <div class="garden-section__head reveal-on-scroll">
+      <span>Entry Points</span>
+      <h2>内容入口</h2>
+      <p>这里按照长期记录的方向组织内容。每个入口都是一个正在生长的空间，而不是一次性完成的作品陈列。</p>
     </div>
-  </div>
-</section>
-
-<section class="container blog-featured">
-  <div class="blog-section-title reveal-on-scroll">
-    <span>Featured</span>
-    <h2>精选内容</h2>
-    <p>这里放代表项目和常用学习笔记。APT项目是其中一个亮点，但首页仍然以信息安全学生的个人技术博客为主。</p>
-  </div>
-  <div class="blog-feature-grid">
-    <a class="blog-feature-card blog-feature-card--large reveal-on-scroll" href="{{ apt_post_url }}">
-      <span class="blog-card-kicker">项目实践</span>
-      <h3>APT攻击案例信息抽取系统</h3>
-      <p>信息抽取、Neo4j知识图谱、攻击链对比和前端可视化，把安全报告做成可分析的数据资产。</p>
-      <div class="blog-card-meta">
-        <span>Python</span>
-        <span>React</span>
-        <span>Neo4j</span>
-      </div>
-    </a>
-    <a class="blog-feature-card reveal-on-scroll" href="{{ site.url }}/2025/11/01/python-basics/">
-      <span class="blog-card-kicker">学习笔记</span>
-      <h3>Python基础</h3>
-      <p>记录Python语法、常用写法和基础练习。</p>
-    </a>
-    <a class="blog-feature-card reveal-on-scroll" href="{{ site.url }}/2025/11/01/C++easy/">
-      <span class="blog-card-kicker">编程基础</span>
-      <h3>C++入门</h3>
-      <p>整理C++基础语法、练习题和学习路径。</p>
-    </a>
-    <a class="blog-feature-card reveal-on-scroll" href="{{ site.url }}/2025/11/01/address-list-management-system/">
-      <span class="blog-card-kicker">课程项目</span>
-      <h3>地址簿管理系统</h3>
-      <p>从需求、数据结构到功能实现的项目复盘。</p>
-    </a>
-  </div>
-</section>
-
-<section class="container blog-categories">
-  <div class="blog-section-title reveal-on-scroll">
-    <span>Map</span>
-    <h2>技术分类</h2>
-    <p>把文章按学习方向组织起来，方便以后查，也方便别人快速理解博客内容。</p>
-  </div>
-  <div class="blog-category-grid">
-    <a class="blog-category-card reveal-on-scroll" href="{{ site.url }}/categories/#学习">
-      <b>01</b>
-      <h3>编程学习</h3>
-      <p>C++、Python、基础语法、练习和阶段性总结。</p>
-    </a>
-    <a class="blog-category-card reveal-on-scroll" href="{{ site.url }}/categories/#项目">
-      <b>02</b>
-      <h3>项目实践</h3>
-      <p>安全方向课程项目、系统设计、前后端联调和文档整理。</p>
-    </a>
-    <a class="blog-category-card reveal-on-scroll" href="{{ site.url }}/categories/#数据库">
-      <b>03</b>
-      <h3>数据库</h3>
-      <p>数据建模、ER图、表结构、Neo4j与关系设计。</p>
-    </a>
-    <a class="blog-category-card reveal-on-scroll" href="{{ site.url }}/categories/#随笔">
-      <b>04</b>
-      <h3>技术思考</h3>
-      <p>学习方法、问题复盘、安全工具使用和工程经验。</p>
-    </a>
-  </div>
-</section>
-{% endif %}
-
-<section id="latest-posts" class="container content blog-content-panel">
-  <div class="blog-section-title blog-section-title--compact reveal-on-scroll">
-    <span>Latest</span>
-    <h2>{% if paginator.page == 1 %}最新文章{% else %}文章列表 · 第 {{ paginator.page }} 页{% endif %}</h2>
-    <p>首页的主体仍然是文章列表：清楚展示标题、摘要、日期和分类，保持博客本身的阅读性。</p>
-  </div>
-  <div class="columns">
-    <div class="column two-thirds">
-      <ol class="repo-list blog-post-list">
-        {% for post in site.posts %}
-        {% if paginator.page == 1 %}
-        {% if post.topmost == true %}
-        <li class="repo-list-item blog-post-card reveal-on-scroll">
-          <h3 class="repo-list-name">
-            <a href="{{ site.url }}{{ post.url }}"><span class="top-most-flag">[置顶]</span>{{ post.title }}</a>
-          </h3>
-          <p class="repo-list-description">{{ post.excerpt | strip_html | strip }}</p>
-          <p class="repo-list-meta">
-            <span class="meta-info">
-              <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d" }}
-            </span>
-            {% for cat in post.categories %}
-            <span class="meta-info">
-              <span class="octicon octicon-file-directory"></span>
-              <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
-            </span>
-            {% endfor %}
-          </p>
-        </li>
-        {% endif %}
-        {% endif %}
-        {% endfor %}
-
-        {% for post in paginator.posts %}
-        {% if post.topmost != true %}
-        <li class="repo-list-item blog-post-card reveal-on-scroll">
-          <h3 class="repo-list-name">
-            <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-          </h3>
-          <p class="repo-list-description">{{ post.excerpt | strip_html | strip }}</p>
-          <p class="repo-list-meta">
-            <span class="meta-info">
-              <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d" }}
-            </span>
-            {% for cat in post.categories %}
-            <span class="meta-info">
-              <span class="octicon octicon-file-directory"></span>
-              <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
-            </span>
-            {% endfor %}
-          </p>
-        </li>
-        {% endif %}
-        {% endfor %}
-      </ol>
+    <div class="garden-entry-grid">
+      <a class="garden-card garden-entry-card reveal-on-scroll" href="{{ site.url }}/categories/#学习">
+        <span class="garden-card__index">01</span>
+        <h3>Notes</h3>
+        <p>技术笔记、课程内容、基础知识和阶段性总结。</p>
+      </a>
+      <a class="garden-card garden-entry-card reveal-on-scroll" href="{{ site.url }}/categories/#项目">
+        <span class="garden-card__index">02</span>
+        <h3>Projects</h3>
+        <p>课程项目、系统实践、功能实现和工程化记录。</p>
+      </a>
+      <a class="garden-card garden-entry-card reveal-on-scroll" href="{{ site.url }}/categories/#安全">
+        <span class="garden-card__index">03</span>
+        <h3>Security</h3>
+        <p>CTF、安全研究、威胁分析和安全方向学习记录。</p>
+      </a>
+      <a class="garden-card garden-entry-card reveal-on-scroll" href="{{ site.url }}/categories/#随笔">
+        <span class="garden-card__index">04</span>
+        <h3>Thoughts</h3>
+        <p>踩坑复盘、学习思考、生活感悟和长期观察。</p>
+      </a>
+      <a class="garden-card garden-entry-card reveal-on-scroll" href="#about">
+        <span class="garden-card__index">05</span>
+        <h3>About</h3>
+        <p>关于这个数字花园，以及它为什么被持续整理。</p>
+      </a>
     </div>
-    <div class="column one-third blog-sidebar">
-      {% include sidebar-search.html %}
-      {% include sidebar-categories-cloud.html %}
-      {% include sidebar-ad.html %}
-      {% include sidebar-popular-repo.html %}
+  </section>
+
+  <section class="garden-section garden-status">
+    <div class="garden-section__head reveal-on-scroll">
+      <span>Current State</span>
+      <h2>当前状态</h2>
+      <p>比起一次性展示结果，这里更关注正在发生的学习、构建和思考。</p>
     </div>
-  </div>
-  <div class="pagination text-align blog-pagination">
-    <div class="btn-group">
-      {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-          <a href="{{ site.url }}/" class="btn btn-outline">&laquo;</a>
-        {% else %}
-          <a href="{{ site.url }}/page{{paginator.previous_page}}" class="btn btn-outline">&laquo;</a>
-        {% endif %}
-      {% else %}
-        <button disabled="disabled" href="javascript:;" class="btn btn-outline">&laquo;</button>
-      {% endif %}
-
-      {% if paginator.page == 1 %}
-        <a href="javascript:;" class="active btn btn-outline">1</a>
-      {% else %}
-        <a href="{{ site.url }}/" class="btn btn-outline">1</a>
-      {% endif %}
-
-      {% assign aroundSize = 2 %}
-      {% assign midStartPage = paginator.page | minus: aroundSize %}
-      {% if 2 > midStartPage %}
-        {% assign midStartPage = 2 %}
-      {% endif %}
-      {% assign midEndPage = paginator.page | plus: aroundSize %}
-      {% if midEndPage >= paginator.total_pages %}
-        {% assign midEndPage = paginator.total_pages | minus:1 %}
-      {% endif %}
-      {% assign tmpPage = aroundSize | plus: 2 %}
-      {% if paginator.page > tmpPage %}
-        <button disabled="disabled" href="javascript:;" class="btn btn-outline">...</button>
-      {% endif %}
-
-      {% for count in (midStartPage..midEndPage) %}
-        {% if count == paginator.page %}
-          <a href="javascript:;" class="active btn btn-outline">{{count}}</a>
-        {% else %}
-          <a href="{{ site.url }}/page{{count}}" class="btn btn-outline">{{count}}</a>
-        {% endif %}
-      {% endfor %}
-
-      {% assign tmpPage = paginator.page | plus: aroundSize | plus: 1 %}
-      {% if paginator.total_pages > tmpPage %}
-        <button disabled="disabled" href="javascript:;" class="btn btn-outline">...</button>
-      {% endif %}
-
-      {% if paginator.total_pages > 1 %}
-        {% if paginator.page == paginator.total_pages %}
-          <a href="javascript:;" class="active btn btn-outline">{{paginator.total_pages}}</a>
-        {% else %}
-          <a href="{{ site.url }}/page{{paginator.total_pages}}" class="btn btn-outline">{{paginator.total_pages}}</a>
-        {% endif %}
-      {% endif %}
-
-      {% if paginator.next_page %}
-        <a href="{{ site.url }}/page{{paginator.next_page}}" class="btn btn-outline">&raquo;</a>
-      {% else %}
-        <button disabled="disabled" href="javascript:;" class="btn btn-outline">&raquo;</button>
-      {% endif %}
+    <div class="garden-status-grid">
+      <article class="garden-card garden-status-card reveal-on-scroll">
+        <h3>正在学习</h3>
+        <p>持续补齐信息安全、编程基础、数据库和系统设计相关知识。</p>
+      </article>
+      <article class="garden-card garden-status-card reveal-on-scroll">
+        <h3>正在构建</h3>
+        <p>把课程项目和技术想法做成可运行、可复盘、可继续迭代的系统。</p>
+      </article>
+      <article class="garden-card garden-status-card reveal-on-scroll">
+        <h3>正在思考</h3>
+        <p>记录问题背后的原因、解决路径，以及下一次怎样做得更好。</p>
+      </article>
     </div>
-  </div>
-</section>
+  </section>
 
-{% if paginator.page == 1 %}
-<section class="container blog-closing reveal-on-scroll">
-  <p>持续学习，持续记录，持续把想法做成作品。</p>
-</section>
-{% endif %}
+  <section class="garden-section garden-about" id="about">
+    <div class="garden-about__panel reveal-on-scroll">
+      <span>About This Garden</span>
+      <h2>关于我</h2>
+      <p>
+        作者是信息安全方向大学生。这里是持续记录学习、项目、思考和成长的地方，
+        不是完美作品集，而是长期生长的知识空间。它会保留真实的过程：做出来的东西、
+        没想明白的问题、踩过的坑，以及一点点变强的痕迹。
+      </p>
+    </div>
+  </section>
+
+  <footer class="garden-footer">
+    <div class="garden-footer__brand">myh11</div>
+    <div class="garden-footer__links">
+      <a href="https://github.com/myh11" target="_blank">GitHub</a>
+      <a href="mailto:your-email@example.com">Email</a>
+      <a href="{{ site.url }}{{ site.subscribe_rss }}">RSS</a>
+    </div>
+    <p>Stay curious. Build quietly. Think deeply.</p>
+  </footer>
+</main>
 
 <script>
 (function () {
@@ -300,7 +149,7 @@ css:
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12 });
+    }, { threshold: 0.14 });
     revealItems.forEach(function (item) { observer.observe(item); });
   } else {
     revealItems.forEach(function (item) { item.classList.add('is-visible'); });
