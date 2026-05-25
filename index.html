@@ -3,7 +3,7 @@ layout: default
 class: home digital-garden-page
 comments: false
 css:
-  - home-showcase.css?v=20260525-cyber-kitty
+  - home-showcase.css?v=20260525-cyber-kitty-v2
 ---
 
 <main class="garden-shell" id="home">
@@ -17,7 +17,7 @@ css:
   <nav class="garden-nav" aria-label="Main navigation">
     <a class="garden-nav__brand" href="{{ site.url }}/">myh11</a>
     <div class="garden-nav__links">
-      <a href="#home">Home</a>
+      <a class="is-active" href="#home">Home</a>
       <a href="#entries">Notes</a>
       <a href="#entries">Projects</a>
       <a href="#entries">Security</a>
@@ -36,6 +36,12 @@ css:
       <div class="garden-hero__actions">
         <a class="garden-button garden-button--primary" href="#entries">View Projects</a>
         <a class="garden-button" href="#entries">Read Notes</a>
+      </div>
+      <div class="garden-connect">
+        <span>CONNECT</span>
+        <a href="https://github.com/myh11" target="_blank" aria-label="GitHub">⌘</a>
+        <a href="mailto:your-email@example.com" aria-label="Email">✉</a>
+        <a href="{{ site.url }}{{ site.subscribe_rss }}" aria-label="RSS">▸_</a>
       </div>
     </div>
 
@@ -118,29 +124,32 @@ system: always learning ▌</code></pre>
     </div>
     <div class="garden-entry-grid">
       <a class="garden-card garden-entry-card reveal-on-scroll" href="{{ site.url }}/categories/#学习">
+        <span class="garden-card__icon garden-card__icon--notes"></span>
         <span class="garden-card__index">01</span>
         <h3>Notes</h3>
         <p>技术笔记、课程内容、基础知识和阶段性总结。</p>
+        <em>Write · Learn · Grow</em>
       </a>
       <a class="garden-card garden-entry-card reveal-on-scroll" href="{{ site.url }}/categories/#项目">
+        <span class="garden-card__icon garden-card__icon--projects"></span>
         <span class="garden-card__index">02</span>
         <h3>Projects</h3>
         <p>课程项目、系统实践、功能实现和工程化记录。</p>
+        <em>Build · Break · Improve</em>
       </a>
       <a class="garden-card garden-entry-card reveal-on-scroll" href="{{ site.url }}/categories/#安全">
+        <span class="garden-card__icon garden-card__icon--security"></span>
         <span class="garden-card__index">03</span>
         <h3>Security</h3>
         <p>CTF、安全研究、威胁分析和安全方向学习记录。</p>
+        <em>Explore · Analyze · Defend</em>
       </a>
       <a class="garden-card garden-entry-card reveal-on-scroll" href="{{ site.url }}/categories/#随笔">
+        <span class="garden-card__icon garden-card__icon--thoughts"></span>
         <span class="garden-card__index">04</span>
         <h3>Thoughts</h3>
         <p>踩坑复盘、学习思考、生活感悟和长期观察。</p>
-      </a>
-      <a class="garden-card garden-entry-card reveal-on-scroll" href="#about">
-        <span class="garden-card__index">05</span>
-        <h3>About</h3>
-        <p>关于这个数字花园，以及它为什么被持续整理。</p>
+        <em>Think · Reflect · Evolve</em>
       </a>
     </div>
   </section>
@@ -169,13 +178,28 @@ system: always learning ▌</code></pre>
 
   <section class="garden-section garden-about" id="about">
     <div class="garden-about__panel reveal-on-scroll">
-      <span>About This Garden</span>
-      <h2>关于我</h2>
-      <p>
-        作者是信息安全方向大学生。这里是持续记录学习、项目、思考和成长的地方，
-        不是完美作品集，而是长期生长的知识空间。它会保留真实的过程：做出来的东西、
-        没想明白的问题、踩过的坑，以及一点点变强的痕迹。
-      </p>
+      <div class="garden-about__avatar" aria-hidden="true">
+        <span></span>
+      </div>
+      <div class="garden-about__copy">
+        <span>About Me</span>
+        <h2>关于我</h2>
+        <p>
+          作者是信息安全方向大学生。这里是持续记录学习、项目、思考和成长的地方，
+          不是完美作品集，而是长期生长的知识空间。它会保留真实的过程：做出来的东西、
+          没想明白的问题、踩过的坑，以及一点点变强的痕迹。
+        </p>
+        <div class="garden-about__chips">
+          <b>Location: Earth</b>
+          <b>School: Infosec</b>
+          <b>Status: Building</b>
+          <b>Favorite: ☕ + 🎧 + 💻</b>
+        </div>
+      </div>
+      <blockquote>
+        <p>The quieter you become,<br>the more you are able to hear.</p>
+        <cite>- Rumi</cite>
+      </blockquote>
     </div>
   </section>
 
@@ -187,6 +211,7 @@ system: always learning ▌</code></pre>
       <a href="{{ site.url }}{{ site.subscribe_rss }}">RSS</a>
     </div>
     <p>Stay curious. Build quietly. Think deeply.</p>
+    <a class="garden-backtop" href="#home">↑ Back to top</a>
   </footer>
 </main>
 
