@@ -3,7 +3,7 @@ layout: default
 class: home digital-garden-page
 comments: false
 css:
-  - home-showcase.css?v=20260525-cyber-kitty-v4
+  - home-showcase.css?v=20260525-latest-home-v1
 ---
 
 <main class="garden-shell" id="home">
@@ -136,12 +136,13 @@ system: always learning ▌</code></pre>
   </section>
 
   <section class="garden-section garden-explorer" id="explore" data-garden-explorer>
+    {% assign home_posts = site.posts | sort: "date" | reverse | slice: 0, 12 %}
     <div class="garden-section__head reveal-on-scroll">
       <span>Faceted Navigation</span>
-      <h2>内容筛选侧栏</h2>
+      <h2>最新内容</h2>
       <p>
-        左侧为粘性搜索与分类标签筛选面板，支持文章、标签、项目关键词检索，并能按分类或标签即时过滤内容。
-        浏览长页面时，筛选侧栏会吸附在页面左侧，方便随时重新定位内容。
+        首页只展示最近更新的文章和项目，避免早期历史文章占据首屏。更多旧内容可以进入分类或归档页慢慢翻。
+        左侧仍保留粘性搜索与分类标签筛选面板，方便快速定位最新记录。
       </p>
     </div>
 
@@ -200,8 +201,8 @@ system: always learning ▌</code></pre>
           <span>支持能力</span>
           <ul>
             <li>文章、标签、项目关键词搜索</li>
-            <li>按分类筛选文章</li>
-            <li>按标签筛选文章</li>
+            <li>按分类筛选最新文章</li>
+            <li>按标签筛选最新文章</li>
             <li>搜索结果实时更新</li>
             <li>标签云快速浏览内容主题</li>
           </ul>
@@ -211,14 +212,17 @@ system: always learning ▌</code></pre>
       <div class="garden-results reveal-on-scroll">
         <div class="garden-results__toolbar">
           <div>
-            <span>Content Index</span>
-            <strong id="gardenResultCount">{{ site.posts | size }} records</strong>
+            <span>Latest Index</span>
+            <strong id="gardenResultCount">{{ home_posts | size }} records</strong>
           </div>
-          <button type="button" id="gardenClearFilters">Reset filters</button>
+          <div class="garden-results__actions">
+            <a href="{{ site.url }}/archives/">查看全部归档</a>
+            <button type="button" id="gardenClearFilters">Reset filters</button>
+          </div>
         </div>
 
         <div class="garden-result-list" id="gardenContentList">
-          {% for post in site.posts %}
+          {% for post in home_posts %}
             {% assign post_summary = post.description | default: post.excerpt | strip_html | strip_newlines | replace: "  ", " " | strip %}
             {% if post_summary == "" %}
               {% assign post_summary = "这是一条学习、项目或技术记录，用于沉淀过程、问题和阶段性思考。" %}

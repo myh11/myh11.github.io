@@ -1201,6 +1201,14 @@
   font-size: 15px;
 }
 
+.garden-results__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.garden-results__actions a,
 .garden-results__toolbar button {
   padding: 9px 12px;
   border: 1px solid rgba(34, 211, 238, .28);
@@ -1210,6 +1218,14 @@
   font: inherit;
   font-size: 12px;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.garden-results__actions a:hover,
+.garden-results__toolbar button:hover {
+  border-color: rgba(103, 232, 249, .48);
+  color: #f8fafc;
+  box-shadow: 0 0 20px rgba(34, 211, 238, .12);
 }
 
 .garden-result-list {
