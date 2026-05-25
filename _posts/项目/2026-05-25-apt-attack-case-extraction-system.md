@@ -2,7 +2,7 @@
 layout: post
 title: "APT攻击案例信息抽取系统"
 date: 2026-05-25 08:00:00 +0800
-categories: 学习
+categories: 项目
 tags: [APT, 知识图谱, 信息抽取, Neo4j, React]
 author: myh
 ---
