@@ -536,6 +536,35 @@
   animation: kitty-float 5.2s ease-in-out infinite;
 }
 
+.cyber-kitty--image {
+  top: 50%;
+  width: 560px;
+  max-width: 138%;
+  height: 530px;
+  margin-left: -280px;
+  margin-top: -280px;
+  filter:
+    drop-shadow(0 28px 34px rgba(2, 6, 23, .42))
+    drop-shadow(0 0 30px rgba(34, 211, 238, .22))
+    drop-shadow(0 0 26px rgba(236, 72, 153, .18));
+  pointer-events: none;
+}
+
+.cyber-kitty--image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: translateZ(24px);
+}
+
+.garden-mascot:hover .cyber-kitty--image {
+  filter:
+    drop-shadow(0 32px 40px rgba(2, 6, 23, .5))
+    drop-shadow(0 0 38px rgba(34, 211, 238, .32))
+    drop-shadow(0 0 34px rgba(236, 72, 153, .28));
+}
+
 .kitty-ear {
   position: absolute;
   top: 38px;
@@ -1273,6 +1302,13 @@
     transform: scale(.82);
     transform-origin: center top;
     margin-bottom: -50px;
+  }
+
+  .cyber-kitty--image {
+    width: 430px;
+    height: 408px;
+    margin-left: -215px;
+    margin-top: -216px;
   }
 
   .mascot-orbit--one {
